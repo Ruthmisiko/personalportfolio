@@ -1,0 +1,324 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/* Navigation bar styles */
+.nav {
+    
+    color: white;
+    padding: 10px 0;
+    height: 100%;
+
+   
+}
+
+.nav-bar {
+    text-align: center;
+    position: fixed;
+    background-color: crimson;
+    top: 0; /* Ensures the nav bar stays at the top */
+    left: 15%; /* Matches the left margin of body */
+    width: 70%; /* Adjusted to match body width minus margins */
+    height: 6%;
+    margin-bottom: 5%;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    display: inline;
+    margin-right: 20px;
+   
+    
+}
+
+.nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 20px;
+  
+}
+
+.nav-bar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Home section styles */
+.home {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+    /* margin-bottom: 20px; */
+    height: 100%;
+    display: flex;
+   
+}
+
+.home h2 {
+    color: crimson;
+    font-size: 2.5em;
+}
+
+.home p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15%;
+}
+.home .abtimage {
+    flex: 0 0 auto;
+    margin-left: 20px;
+}
+
+.home .abtimage img {
+   
+    max-width: 90%; /* Adjust this value as needed */
+    height: 100%;
+}
+/* About section styles */
+#about {
+    background-color: #ccc;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+}
+
+#about .card1 {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+#about .card1 h1 {
+    color: crimson;
+    font-size: 2em;
+}
+
+#about .card1 p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+#about .img{
+    margin-right: 5%;
+}
+/* #about .img img {
+    max-width: 100%;
+    border-radius: 8px;
+} */
+#about .img img {
+  
+    max-width: 600px; /* Adjust this value as needed */
+    height: auto;
+    
+}
+
+/* Services section styles */
+.services {
+    background-color: lightpink;
+    padding: 50px;
+    text-align: center;
+}
+
+.services h1 {
+    color: crimson;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.services .service {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.services .card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 10px 20px;
+    max-width: 30%;
+}
+.services .card:hover {
+    background-color:antiquewhite ;
+   
+}
+.services .card h2 {
+    color: crimson;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.services .card p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.certificates {
+    background-color: lightpink;
+    padding: 50px;
+    text-align: center;
+}
+
+.certificates h1 {
+    color: crimson;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.certificates .certificates {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.certificates .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 5px 10px;
+    max-width: 20%;
+    text-align: center;
+}
+
+.certificates .card img {
+    width: 100%; /* Ensure the image fits within the card's width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Limit maximum height to prevent oversized images */
+    object-fit: contain; /* Ensure images are scaled proportionally */
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.certificates .card:hover {
+    background-color: antiquewhite;
+}
+
+.certificates .card h2 {
+    color: crimson;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.certificates .card p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Projects section styles */
+/* Projects section styles */
+.projects {
+    background-color: #ccc;
+    padding: 50px;
+    text-align: center;
+}
+
+.projects h1 {
+    color: crimson;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.projects .proj {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; /* Adjust this value for spacing between the cards */
+}
+
+.projects .project-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Ensures that all cards are of equal width */
+    margin-bottom: 20px;
+}
+
+.projects .project-card:hover {
+    background-color:antiquewhite ;
+   
+}
+.projects .project-card h2 {
+    color: crimson;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.projects .project-card p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Skills section styles */
+.skills {
+    background-color: #ccc;
+    padding: 50px;
+    text-align: center;
+}
+
+.skills h1 {
+    color: crimson;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px;
+    width: 22%;
+}
+.skill-card:hover {
+    background-color:antiquewhite ;
+   
+}
+
+
+.skill-card h2 {
+    color: crimson;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.copyright {
+    font-size: 12px;
+    color: grey;
+    line-height: 1.6;
+    margin: 30px 20px;
+}
+
+/* Button styles */
+/* Button styles */
+.cv-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: crimson;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: darkred;
+}
