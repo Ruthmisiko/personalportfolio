@@ -354,7 +354,7 @@ body {
     }
 /* Side Navigation Panel */
 .side-nav {
-    height: 30%;
+    height: 50%;
     width: 0; /* Hidden by default */
     position: fixed;
     top: 0;
