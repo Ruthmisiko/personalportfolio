@@ -26,7 +26,13 @@ body {
     height: 6%;
     margin-bottom: 5%;
 }
-
+/* Hamburger menu - hidden on desktop */
+.hamburger-menu {
+    display: none; /* Default: hide */
+    font-size: 1.8em;
+    cursor: pointer;
+    color: white;
+}
 .nav-bar ul {
     list-style-type: none;
     margin: 0;
@@ -187,7 +193,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 5px 10px;
+    margin: 0 5px 10px 0;
     max-width: 20%;
     text-align: center;
 }
@@ -285,7 +291,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin: 10px;
-    width: 22%;
+    width: 60%;
 }
 .skill-card:hover {
     background-color:antiquewhite ;
@@ -321,4 +327,226 @@ body {
 
 .cv-button:hover {
     background-color: darkred;
+}
+
+/* General media query for devices with width 768px or smaller (tablets) */
+@media (max-width: 768px) {
+    body {
+        margin-left:none;
+        margin-right:none;
+    }
+
+    /* Navbar adjustments */
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links on smaller screens */
+    }
+/* Side Navigation Panel */
+.side-nav {
+    height: 30%;
+    width: 0; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: crimson;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px; /* Space for close button */
+    z-index: 1000;
+}
+
+/* Side navigation links */
+.side-nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    display: block; /* Stack links vertically */
+    transition: 0.3s;
+}
+
+/* Hover effect for side nav links */
+.side-nav a:hover {
+    background-color: darkred;
+}
+
+/* Close button styling */
+.side-nav .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2em;
+    cursor: pointer;
+}
+    /* Home Section */
+    .home {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+    }
+
+    .home .abtimage img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px; /* Add spacing below the image */
+    }
+
+    /* About Section */
+    #about {
+        flex-direction: column; /* Stack content */
+        text-align: center;
+    }
+
+    #about .img img {
+        max-width: 90%;
+        height: auto;
+        margin-bottom: 20px; /* Add spacing below the image */
+    }
+
+    #about .card1 {
+        padding: 20px;
+    }
+
+    /* Services Section */
+    .services .service {
+        flex-direction: column; /* Stack services */
+    }
+
+    .services .card {
+        max-width: 100%; /* Full width */
+        margin: 10px 0; /* Add spacing between cards */
+    }
+
+    /* Projects Section */
+    .projects .proj {
+        flex-direction: column; /* Stack projects */
+    }
+
+    .projects .project-card {
+        max-width: 100%; /* Full width */
+        margin: 10px 0;
+    }
+
+    .skill-card {
+        display: block; /* Make each skill a block */
+        margin: 5px 0; /* Add spacing between items */
+        background: none; /* Remove background color */
+        box-shadow: none; /* Remove shadow effect */
+        text-align: left; /* Align text to the left */
+        font-size: 1.2em; /* Adjust font size */
+        padding: 0; /* Remove padding */
+    }
+
+    /* Optional: Add bullet points for a list look */
+    .skill-card::before {
+        /* Add a bullet point before each skill */
+        color: crimson;
+        font-size: 1.5em;
+        margin-right: 5px; /* Space between bullet and text */
+    }
+
+    /* Center the section */
+    .skill-list {
+        text-align: center; /* Center-align the overall list */
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .certificates {
+        flex-direction: column; /* Stack certificates */
+        font-size: small;
+        padding: none;
+        text-align: center;
+        background-color: none;
+        
+    }
+    /* Certificates Section */
+    .certificates .certificates {
+        flex-direction: column; /* Stack certificates */
+        font-size: small;
+        padding: none;
+        text-align: center;
+        background-color: none;
+        
+    }
+ 
+    .certificates .card {
+        max-width: fit-content; /* Full width */
+        margin: 0 20px 20px 5px;
+
+
+    }
+
+    .certificates .card img {
+        max-height: 120px; /* Reduce image size */
+    }
+    .certificates .card .cv-button{
+        font-size: 0.5rem;
+    }
+}
+
+/* Media query for devices with width 480px or smaller (smartphones) */
+@media (max-width: 480px) {
+    body {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .nav-bar {
+        font-size: 0.8em;
+        padding: 10px;
+    }
+
+    /* Reduce font sizes */
+    h1, h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    /* Home Section */
+    .home h2 {
+        font-size: 1.5em;
+    }
+
+    .home p {
+        font-size: 0.9em;
+    }
+
+    /* Reduce button size */
+    .cv-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    /* Services, Projects, and Skills */
+    .services .card,
+    .projects .project-card,
+    .skill-card {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    /* Certificates Section */
+    .certificates .card img {
+        max-height: 100px; /* Further reduce image size */
+    }
+
+    /* Footer */
+    .copyright {
+        font-size: 10px;
+        text-align: center;
+    }
 }
